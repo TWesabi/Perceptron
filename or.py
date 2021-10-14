@@ -14,7 +14,7 @@ def main(data, eta, epochs, filename, plotFileName):
 
 
 
-    model = Perceptron(eta=ETA, epochs=EPOCHS)
+    model = Perceptron(eta=eta, epochs=epochs)
     model.fit(X, y)
 
     _ = model.total_loss() # the "_" at the beginnig is just a dummy variable, it can be removed
