@@ -9,6 +9,15 @@ import os
 plt.style.use("fivethirtyeight") # THIS IS STYLE OF GRAPHS
 
 def prepare_data(df):
+  
+  """ it creates data and labels
+
+  Args:
+      df (pd.DataFrame): Pandas DataFrame containing data
+
+  Returns:
+      tuple: it returns the tuples of dependent and independent variables
+  """
   X = df.drop("y", axis=1)
 
   y = df["y"]
